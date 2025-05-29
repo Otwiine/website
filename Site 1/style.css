@@ -1,11 +1,10 @@
 body{
-    background-color: black;
+    background: black;
 }
 
 h1{
     color: white;
     font-family: "consalas", sans-serif;
-    
 }
 
 h2{
@@ -30,4 +29,33 @@ p{
 
 ul{
     color: white
+}
+
+button{
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}
+
+.devicon-github-original {
+  font-size: 30px;
+}
+
+.devicon-powershell-plain{
+  font-size: 30px;
+}
+
+#float{
+    float: left;
+    padding: 20px;
 }
