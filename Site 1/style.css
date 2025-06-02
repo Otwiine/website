@@ -62,3 +62,13 @@ button:active{
 #xp{
     border-color: white;
 }
+
+#greet1{
+    animation: slide;
+    animation-duration: 3s
+}
+
+@keyframes slide{
+    from{margin-left: 50%;}
+    to{margin-right: 0%;}
+}
