@@ -1,36 +1,65 @@
+/* HTML BODY */
 body{
-    background: black;
+    background: rgb(0, 0, 0);
+    color: whitesmoke;
 }
 
 h1{
-    color: white;
+    color: whitesmoke;
     font-family: "consalas", sans-serif;
 }
 
 h2{
-    color: white;
+    color: whitesmoke;
     font-family: "consalas", sans-serif;
 }
 
 h3{
-    color: white;
+    color: whitesmoke;
     font-family: "consalas", sans-serif;
 }
 
 h4{
-    color: white;
+    color: whitesmoke;
     font-family: "consalas", sans-serif;
 }
 
 p{
-    color: white;
+    color: whitesmoke;
     font-family: "consalas", sans-serif;
 }
 
 ul{
-    color: white
+    color: whitesmoke
 }
 
+/* NAV-BAR */
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+}
+
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: gray;
+}
+
+.navbar li{
+    float: left;
+}
+
+/* BUTTONS 
 button{
     border-color: white;
     background-color: black;
@@ -46,7 +75,9 @@ button:active{
     background-color: black;
     color: white;
 }
+*/
 
+/* ICONS */
 .devicon-github-original {
   font-size: 30px;
 }
@@ -55,14 +86,13 @@ button:active{
   font-size: 30px;
 }
 
+/* FLOAT */
 #float{
     float: left;
     padding: 20px;
 }
-#xp{
-    border-color: white;
-}
 
+/* ANIMATIONS */
 #greet1{
     animation: slide;
     animation-duration: 3s
@@ -71,4 +101,31 @@ button:active{
 @keyframes slide{
     from{margin-left: 50%;}
     to{margin-right: 0%;}
+}
+
+/* SOCIAL */
+.social{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0px 20px 0px 20px
+}
+
+.social a{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social a[href*="instagram.com"]:hover {
+  color: #E1306C;
+}
+
+.social a[href*="x.com"]:hover {
+  color: #1DA1F2;
+}
+
+.social a[href*="github.com"]:hover {
+  color: #a9a9a9;
 }
