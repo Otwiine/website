@@ -39,7 +39,9 @@ ul{
     background-color: black;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -53,10 +55,6 @@ ul{
 
 .navbar a:hover{
     background-color: gray;
-}
-
-.navbar li{
-    float: left;
 }
 
 /* BUTTONS 
