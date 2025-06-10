@@ -1,2 +1,2 @@
 # Website
-HTML, CSS and JavaScript files for my personal website.
+HTML, CSS and soon JavaScript files for my personal portfolio website, highlighting my skills and experience.
