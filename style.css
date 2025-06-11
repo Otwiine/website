@@ -114,6 +114,21 @@ ul {
     display: block;
 }
 
+#ris-logo {
+    background-color: #f5faff;
+    padding: 1em;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 1.5em auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#ris-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ANIMATION */
 #greet1 {
     animation: slideIn 2.5s ease;
@@ -237,4 +252,16 @@ body {
 
 .shoutout .social a:hover {
   color: #007acc;
+}
+
+.shoutout a[href*="instagram.com"]:hover {
+    color: #e1306c;
+}
+
+.shoutout a[href*="x.com"]:hover {
+    color: #1da1f2;
+}
+
+.shoutout a[href*="github.com"]:hover {
+    color: #a9a9a9;
 }
