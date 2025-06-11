@@ -1,129 +1,240 @@
-/* HTML BODY */
-body{
-    background: rgb(0, 0, 0);
-    color: whitesmoke;
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0e1013;
+    color: #f5faff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
-h1{
-    color: whitesmoke;
-    font-family: "consalas", sans-serif;
+/* HEADINGS */
+h1, h2, h3, h4 {
+    color: #f5faff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 1em;
 }
 
-h2{
-    color: whitesmoke;
-    font-family: "consalas", sans-serif;
+/* PARAGRAPHS */
+p {
+    margin: 1em 2em;
+    font-size: 1.05rem;
+    color: #d0d8e0;
 }
 
-h3{
-    color: whitesmoke;
-    font-family: "consalas", sans-serif;
+/* LISTS */
+ul {
+    color: #d0d8e0;
+    margin: 0 2em 1em 2em;
+    padding-left: 1.2em;
 }
 
-h4{
-    color: whitesmoke;
-    font-family: "consalas", sans-serif;
-}
-
-p{
-    color: whitesmoke;
-    font-family: "consalas", sans-serif;
-}
-
-ul{
-    color: whitesmoke
-}
-
-/* NAV-BAR */
-.navbar ul{
+/* NAVBAR */
+.navbar ul {
     list-style-type: none;
-    background-color: black;
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1f26;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
-.navbar a{
-    color: whitesmoke;
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #f5faff;
     text-decoration: none;
-    padding: 15px;
+    padding: 15px 20px;
     display: block;
-    text-align: center;
+    transition: all 0.3s ease;
 }
 
-.navbar a:hover{
-    background-color: gray;
+.navbar a:hover {
+    background-color: #00bcd4;
+    color: #0e1013;
+    border-radius: 5px;
 }
 
-/* BUTTONS 
-button{
-    border-color: white;
-    background-color: black;
-    color: white;
-}
-
-button:hover{
-    background-color: grey;
-    color: white;
-}
-
-button:active{
-    background-color: black;
-    color: white;
-}
-*/
-
-/* ICONS */
-.devicon-github-original {
-  font-size: 30px;
-}
-
-.devicon-powershell-plain{
-  font-size: 30px;
-}
-
-/* FLOAT */
-#float{
-    float: left;
-    padding: 20px;
-}
-
-/* ANIMATIONS */
-#greet1{
-    animation: slide;
-    animation-duration: 3s
-}
-
-@keyframes slide{
-    from{margin-left: 50%;}
-    to{margin-right: 0%;}
-}
-
-/* SOCIAL */
-.social{
+/* SOCIAL ICONS */
+.social {
     display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    padding: 0px 20px 0px 20px
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
-.social a{
-    color: white;
+.social a {
+    color: #f5faff;
     font-size: 28px;
-    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social a[href*="instagram.com"]:hover {
-  color: #E1306C;
+    color: #e1306c;
 }
 
 .social a[href*="x.com"]:hover {
-  color: #1DA1F2;
+    color: #1da1f2;
 }
 
 .social a[href*="github.com"]:hover {
-  color: #a9a9a9;
+    color: #a9a9a9;
+}
+
+.social a[href*="discord.com"]:hover {
+    color: #5865F2;
+}
+
+
+/* GITHUB BADGE */
+#badge img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* BANNER IMAGE */
+#banner {
+    background-color: #f5faff;
+    padding: 1em;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 1.5em auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ANIMATION */
+#greet1 {
+    animation: slideIn 2.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: 50%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+    p, ul {
+        margin: 1em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    #banner {
+        width: 90%;
+    }
+}
+
+body {
+  background: #0a0f1c; 
+  color: #f5f5f5;
+  font-family: "Consolas", sans-serif;
+}
+
+.centered {
+  text-align: center;
+}
+
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Smooth header greeting */
+#greet1 {
+  animation: slide 2s ease-out;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#float {
+    float: right;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-section {
+    margin-bottom: 20px;
+}
+
+.tech-section ul {
+    padding-left: 20px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: flex-start; /* align with the list */
+    gap: 10px;  /* Space between icons */
+    margin-top: 5px;  /* Push it away from the list above */
+    padding-left: 70px; /* match <ul> indent */
+    flex-wrap: wrap;  /* Wrap on smaller screens */
+}
+
+/* Contact info block */
+.contact-info {
+    margin-top: 20px;
+    font-style: normal; /* override default italic for address */
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.contact-info a {
+    color: #007acc; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+    color: #005f99;
+    text-decoration: underline;
+}
+
+.shoutout {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.shoutout .social a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #b9a3a3;
+}
+
+.shoutout .social a:hover {
+  color: #007acc;
 }
